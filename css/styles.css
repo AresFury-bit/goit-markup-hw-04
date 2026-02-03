@@ -1,4 +1,5 @@
 body {
+box-sizing: border-box;
 font-family: "Roboto", sans-serif;
 color:#434455;
 background-color: white;
@@ -7,10 +8,77 @@ letter-spacing: 0.02em;
 font-size: 16px;
 font-style: normal;
 }
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    display: block;
+
+}
+img{
+    display:block;
+}
+h1 {
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    padding-bottom: 48px;
+    
+
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    line-height: 1.11;
+    padding-top: 120px;
+    padding-bottom: 72px;
+
+}
+h2 ul{
+    display: flex;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #2E2F42;
+    line-height: 1.2;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, p {
+margin: 0;
+}
 a {
     text-decoration: none;
 }
 ul{list-style-type: none;}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+
 
 .style-logo{
     color: #4D5AE5;
@@ -25,6 +93,12 @@ ul{list-style-type: none;}
     letter-spacing: 0.03em;
     font-weight:700;
     text-transform: uppercase;
+    padding-right: 76px;
+}
+.location-header{
+    display:flex;
+    padding: 24px 0;
+    
 }
 .logo-end{
     font-size: 18px;
@@ -35,46 +109,62 @@ ul{list-style-type: none;}
         letter-spacing: 0.03em;
         font-weight: 700;
         text-transform: uppercase;
+        
 }
-.studio{
-    background-color:#f4f4fd;
+
+.navigation{
+display:flex;
 }
-.navigation .nav-color{
+.nav-items{
 color: #2E2F42;
 font-weight:500;
 line-height: 1.5;
 font-size: 1rem;
 letter-spacing: 0.02em;
-
+padding: 0 40px;
 
 }
-.navigation .nav-color:hover,
-.navigation .nav-color:focus
+.navigation .nav-items:hover,
+.navigation .nav-items:focus
 { 
 color: #404BBF;
 }
-address .nav-color{
+.contact{
+padding-left: 50px;
+}
+address .nav-items{
 color:#434455;
 font-style: normal;
 
 }
-address .nav-color:hover,
-address .nav-color:focus
+address .nav-items:hover,
+address .nav-items:focus
 {
 color:#404BBF;
 }
  .cap{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
     background-color: #2E2F42;
+    
 }  
 /* Family: Roboto Weight: Medium Size: 16px Line Height: 24px Letter Spacing: 4% */
 .button {
     background-color: #4D5AE5;
     color: white;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 56px;
     letter-spacing: 0.04em;
     cursor: pointer;
     font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 169px;
+       
     
 }
 button:hover,
@@ -83,49 +173,72 @@ button:focus {
     
 }
 .studio{
-    background-color:#f4f4fd;
-    text-align:center;
+    background-color: #F4F4FD;
+    height: 732px;;
+}
+
+.container-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 1240px;
+    row-gap:24px;
+    column-gap:48px;
+}
+
+.container-portfolio-items {
+    width: calc((100%-48px)/3);   
+}
+.privilege-container
+{
+display:flex;
+padding: 120px 0;
+}
+
+.privilege-container-items {
+padding: 0 24px;
+width: 264px;
+height: 104px;
+}
+.privilege-container-items h3{
+    padding-bottom:8px;
+}
+.team{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .team-members{
-background-color: #FFFFFF;
-
+    background-color: #FFFFFF;
+    margin:24px;
 }
-
+.team-members h3{
+padding: 32px 0 8px 0;
+text-align:center;
+}
+.team-members p
+{
+    text-align:center;
+    padding-bottom:32px;
+}
+.footer-container{
+    width: 264px;
+    margin-left: 156px;
+    padding-top: 100px;
+    
+}
 footer{
     background-color: #2E2F42;
+    height:312px;
 }
 .and-text{
 color:#F4F4FD;
 line-height: 1.5;
 font-weight: 400;
 letter-spacing: 0.02em;
+padding-top: 16px;
 
 }
-h1{
-    color:white;
-    font-size: 56px; 
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-}
 
-h2{
-font-weight: bold;    
-font-size: 2.25rem;
-letter-spacing: 0.02em;
-color:#2E2F42;
-line-height: 1.11;
-
-}
-h3{
-        font-size: 20px;
-        letter-spacing: 0.02em;
-        font-weight: 500;
-        color:#2E2F42;
-        line-height: 1.2;
-}
-h1,h2{
-    text-align: center;
-}
 
