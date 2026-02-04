@@ -115,7 +115,8 @@ ul, ol {
 .navigation{
 display:flex;
 }
-.nav-items{
+.nav-items,
+.address-items{
 color: #2E2F42;
 font-weight:500;
 line-height: 1.5;
@@ -124,8 +125,10 @@ letter-spacing: 0.02em;
 padding: 0 40px;
 
 }
-.navigation .nav-items:hover,
-.navigation .nav-items:focus
+.nav-items:hover,
+.nav-items:focus,
+.address-items:hover,
+.address-items:focus
 { 
 color: #404BBF;
 }
@@ -141,6 +144,10 @@ address .nav-items:hover,
 address .nav-items:focus
 {
 color:#404BBF;
+}
+
+.address-items:first-child {
+padding-left: 74px;
 }
  .cap{ 
     display: flex;
