@@ -173,15 +173,15 @@ color:#404BBF;
 .button {
     background-color: #4D5AE5;
     color: white;
-    font-size: 1rem;
-    padding:32px 16px;
+    font-size: 16px;;
+    padding:16px 32px;
     letter-spacing: 0.04em;
     cursor: pointer;
     font-weight: 500;
     display: block;
     margin: 0 auto;
     border-radius: 4px;
-    width: 169px;
+   
     border: none;
        
     
@@ -236,20 +236,22 @@ font-size: 16px;
 }
 .container-team{
 padding: 32px 16px;
-border-radius: 0 0 4px 4;
+
 }
 .team{
     
     display: flex;
     justify-content: center;
+    gap:24px;
 }
 .team-members{
     background-color: #FFFFFF;
-    margin:24px;
+    border-radius: 0 0 4px 4px;
     
 }
 .team-members img{
     width: 264px;
+    height: 260px;;
 }
 .team-members h3{
 padding: 32px 0 8px 0;
