@@ -192,24 +192,23 @@ button:focus {
     
 }
 
-.container-potfolio {
+.container-portfolio {
     display: flex;
     flex-wrap: wrap;
-    row-gap:48px;
-    column-gap:24px;
-    padding-bottom:120px;
+    row-gap: 48px;
+    column-gap: 24px;
+    padding-bottom: 120px;
 }
 .container-portfolio-description{
  border: 1px solid #E7E9FC; 
 border-top: none;
+width: 360px;
 }
 
 .container-portfolio-items {
 width: calc(( 100% - 48px ) / 3);
 }
-.container-portfolio-items img{
-    width: 360px;
-}
+
 .container-portfolio-items h3{
     padding: 32px 0 8px 16px;
 }
@@ -254,10 +253,7 @@ padding: 32px 16px;
 .team-members-description{
     padding: 32px 16px;
 }
-.team-members img{
-    width: 264px;
-    height: 260px;
-}
+
 .team-members h3{
 padding: 32px 0 8px 0;
 text-align:center;
