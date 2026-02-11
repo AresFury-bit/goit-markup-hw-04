@@ -166,6 +166,7 @@ font-style: normal
     text-align: center;
     background-color: #2E2F42;
     padding: 188px 0;
+    margin: 0 auto;
     
 }  
 /* Family: Roboto Weight: Medium Size: 16px Line Height: 24px Letter Spacing: 4% */
@@ -196,7 +197,6 @@ button:focus {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    padding-bottom: 120px;
 }
 .container-portfolio-description{
  border: 1px solid #E7E9FC; 
