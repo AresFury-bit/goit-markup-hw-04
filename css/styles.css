@@ -192,7 +192,8 @@ font-style: normal
     padding: 188px 0;
     max-width: 1440px;;
     margin: 0 auto;
-    background-image:  linear-gradient(to bottom , rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), url(../images/people-office\ 1.jpg);
+    background-image:  linear-gradient(to bottom , rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), url(../images/people-office\1.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -278,7 +279,6 @@ gap: 24px;
 }
 .privilege-container-items {
 width: 264px;
-height: 104px;
 font-size: 16px;
 margin-bottom: 185px;
 }
@@ -346,7 +346,9 @@ margin-bottom: 185px;
 
 .svg-link-items{
     position: absolute;
-    transform: translate(75%, 75%);
+    top: 30%;
+    left: 30%;
+    /* transform: translate(75%, 75%); */
    
 }
 
@@ -385,7 +387,9 @@ gap:16px;
 
 .link-end{
     position: absolute;
-    transform: translate(35%, 35%);
+    top:10px;
+    left: 10px;
+    transform: translate(-5%, -5%);
 }
 
 footer{
@@ -402,6 +406,7 @@ width: 264px;
 }
 .footer-links .and-text{
     font-weight:500;
+    color:#fff;
 }
 
 
