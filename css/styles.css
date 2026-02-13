@@ -137,6 +137,8 @@ letter-spacing: 0.02em;
 padding: 24px 0;
 display:block;
 font-style: normal;
+transition-property: color;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .nav-items{
@@ -144,6 +146,17 @@ font-style: normal;
     display: inline-block;
     padding: 24px 0;
     color: #2E2F42;
+    transition-property: color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current-page::after{
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+
 }
 .nav-items:hover,
 .nav-items:focus,
@@ -167,6 +180,10 @@ font-style: normal
     background-color: #2E2F42;
     padding: 188px 0;
     margin: 0 auto;
+    background-image: url(../images/Dark-bg.png);
+    background-image:  linear-gradient(to bottom , rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), url(../images/people-office\ 1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     
 }  
 /* Family: Roboto Weight: Medium Size: 16px Line Height: 24px Letter Spacing: 4% */
@@ -181,7 +198,8 @@ font-style: normal
     display: block;
     margin: 0 auto;
     border-radius: 4px;
-   
+   transition-property: background-color;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
        
     
@@ -211,6 +229,28 @@ padding: 32px 16px;
 width: calc(( 100% - 48px ) / 3);
 }
 
+.overflow-container{
+overflow: hidden;
+position: relative;
+}
+.portfolio-overflow{
+padding: 40px 32px 0px;
+background-color: #4D5AE5;
+color: #F4F4FD;
+position: absolute;
+top: 0;
+left:0;
+width: 100%;
+height:100%;
+transform:translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.overflow-container:hover .portfolio-overflow,
+.overflow-container:focus .portfolio-overflow{
+    transform:translateY(0);
+}
+
 .privilege-container
 {
 display:flex;
@@ -223,6 +263,23 @@ gap: 24px;
 width: 264px;
 height: 104px;
 font-size: 16px;
+margin-bottom: 185px;
+}
+
+
+
+.privilege-box-svg{
+    
+    max-width: 100%;
+    height: 112px;
+    border: 1px solid #8E8F99;
+    margin-bottom: 8px;
+    background-color: #F4F4FD;
+    padding: 24px 102px;
+
+}
+.privilege-icon{
+    
 }
 .privilege-container-items h3{
     padding-bottom:8px;
@@ -240,10 +297,36 @@ font-size: 16px;
 .team-members{
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     
 }
 .team-members-description{
     padding: 32px 16px;
+}
+.container-team-link{
+    display:flex;
+    justify-content: center;
+    gap:24px;
+}
+
+.team-svg-link{
+   border-radius: 50%;
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition-property: background-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+.team-svg-link:hover,
+.team-svg-link:focus {
+    background-color: #404BBF;
+}
+
+.svg-link-items{
+    position: absolute;
+    transform: translate(30%, 30%);
+   
 }
 
 .team-members h3{
@@ -253,15 +336,27 @@ text-align:center;
 .team-members p
 {
     text-align:center;
-    padding-bottom:32px;
+    padding-bottom:8px;
 }
 .footer-container{
     padding-top: 100px;
     padding-bottom:100px;
+    display: flex;
+    gap: 120px;
+}
+.footer-links{
+   display:flex;
+   flex-direction:column;
+   height: 80px;
+   width: 208px;
+   gap: 30px;
+}
+.container-team-link .links-end{
+    display: flex;
+    gap: 16px;
 }
 footer{
-    background-color: #2E2F42;
-    
+    background-color: #2E2F42; 
 }
 .and-text{
 color:#F4F4FD;
